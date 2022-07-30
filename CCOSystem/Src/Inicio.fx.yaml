@@ -1,0 +1,44 @@
+Inicio As screen:
+    OnVisible: |-
+        =Collect(arregloOpciones, {Pressed: Button1.Pressed})
+
+    Button1 As button:
+        OnSelect: |-
+            =If(Dropdown1.Selected.Value="Regístro de producto",
+                Navigate(Productos),
+                If(Dropdown1.Selected.Value="Órdenes de Compra",
+                Navigate(Ordenes),
+                    If(Dropdown1.Selected.Value="Consulta Producto",
+                        Navigate(ConsultarProd),
+                        If(Dropdown1.Selected.Value="Consulta Orden",
+                            Navigate(ConsultaOrden)
+                        )
+                    )
+                )
+            );
+        Text: ="Ir"
+        X: =648
+        Y: =619
+        ZIndex: =1
+
+    Label2 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =331
+        Size: =70
+        Text: ="ADMINISTRACION MAESTRO DE PRODUCTO"
+        Width: =852
+        X: =302
+        Y: =121
+        ZIndex: =3
+
+    Rectangle1 As rectangle:
+        Width: =1366
+        ZIndex: =4
+
+    Dropdown1 As dropdown:
+        Items: =arregloOpciones
+        X: =564
+        Y: =515
+        ZIndex: =5
+

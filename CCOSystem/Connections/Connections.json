@@ -1,0 +1,38 @@
+{
+  "0434588d-cda6-4139-86d2-233462ba0a34": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://ccolabs.sharepoint.com/sites/JuanAntonioSantaigoUribe": {
+        "dataSources": {
+          "ordenes": {
+            "tableName": "2cba194e-a045-42db-b48a-06e37af64f99"
+          },
+          "productos": {
+            "tableName": "9cb764b4-c15c-40a1-a19e-03336b21a545"
+          },
+          "usuarios": {
+            "tableName": "04839a98-13d1-4a47-a071-5fbaad1eacee"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "productos",
+      "usuarios",
+      "ordenes"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0434588d-cda6-4139-86d2-233462ba0a34"
+  }
+}

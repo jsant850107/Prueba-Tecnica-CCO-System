@@ -1,0 +1,10 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =Set(v_frmEditVisible,false);
+        Set(v_frmconfirmVisible,false);
+        Set(v_lblProducto,"");
+        Set(v_lblOrden,"");
+        ClearCollect(arregloOpciones,["Seleccionar una Opción","Regístro de producto","Órdenes de Compra","Consulta Producto","Consulta Orden"])
+    StartScreen: =
+
